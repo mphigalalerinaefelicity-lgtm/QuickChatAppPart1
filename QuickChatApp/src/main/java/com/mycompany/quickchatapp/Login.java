@@ -33,8 +33,7 @@ public class Login {
 
         return username != null
                 && username.length() <= 5
-                && username.contains("_");
-    }
+               
 
     // Password must have 8+ characters, a capital letter, number and special character
     public boolean checkPassword(String password) {
