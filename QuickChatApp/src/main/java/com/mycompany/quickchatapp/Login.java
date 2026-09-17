@@ -77,7 +77,9 @@ public class Login {
 
     // Checks login details
     public boolean loginUser(String username, String password) {
-
+        if (username == null || password == null) {
+            return false;
+        }
         return username.equals(savedUsername)
                 && password.equals(savedPassword);
     }
